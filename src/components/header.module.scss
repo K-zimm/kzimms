@@ -1,0 +1,55 @@
+@import "../styles/variables";
+
+.header {
+  background-color: $gray-dark;
+  &_nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+}
+
+.logo {
+  text-decoration: none;
+
+  font-size: 4rem;
+  h1 {
+    /*font-family: $font-display;*/
+    color: #fff;
+  }
+  &_dot {
+    color: $mainColor-light;
+  }
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  &_item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: none !important;
+    }
+  }
+  &_item:hover {
+    color: $mainColor-light;
+  }
+  &_item-active {
+    color: $secondaryColor;
+  }
+}
