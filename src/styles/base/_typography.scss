@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Assistant|Bree+Serif&display=swap");
+
+@font-face {
+  font-family: "SpaceRanger";
+  src: url("./fonts/spaceranger-webfont.woff2") format("woff2"),
+    url("./fonts/spaceranger-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceRangerLaser";
+  src: url("./fonts/spacerangerlaser-webfont.woff2") format("woff2"),
+    url("./fonts/spacerangerlaser-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #fff;
+  font-family: unquote("Assistant");
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+@mixin typo-headline1 {
+  font-family: unquote("Bree Serif");
+  font-size: 10rem;
+}
+@mixin typo-headline2 {
+  font-family: unquote("Bree Serif");
+  font-size: 6.3rem;
+}
+@mixin typo-headline3 {
+  font-family: unquote("Bree Serif");
+  font-size: 5rem;
+}
+@mixin typo-headline4 {
+  font-family: unquote("Bree Serif");
+  font-size: 3.6rem;
+}
+@mixin typo-headline5 {
+  font-family: unquote("Bree Serif");
+  font-size: 2.5rem;
+}
+@mixin typo-headline6 {
+  font-family: unquote("Bree Serif");
+  font-size: 2.1rem;
+}
+@mixin typo-body1 {
+  font-family: unquote("Assistant");
+  font-size: 1.7rem;
+}
+@mixin typo-body2 {
+  font-family: unquote("Assistant");
+  font-size: 1.5rem;
+}
+@mixin typo-subtitle1 {
+  font-family: unquote("Bree Serif");
+  font-size: 1.7rem;
+}
+@mixin typo-subtitle2 {
+  font-family: unquote("Bree Serif");
+  font-size: 1.5rem;
+}
+@mixin typo-button {
+  font-family: unquote("Assistant");
+  font-size: 1.5rem;
+}
+@mixin typo-overline {
+  font-family: unquote("Assistant");
+  font-size: 1.1rem;
+}
+@mixin typo-caption {
+  font-family: unquote("Assistant");
+  font-size: 1.3rem;
+}

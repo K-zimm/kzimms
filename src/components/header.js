@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import headerStyles from "./header.module.scss"
+import Logo from "../../content/assets/logo-underline-white.svg"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -14,25 +14,19 @@ const Header = () => {
     }
   `)
   return (
-    <div className={headerStyles.header}>
-      <nav className={headerStyles.header_nav}>
+    <div className="header">
+      <nav className="header__nav">
         <div className="logo-container">
-          <Link
-            to="/"
-            className={headerStyles.logo}
-            activeClassName={headerStyles.navList_itemActive}
-          >
-            <h1>
-              K<span className={headerStyles.logo_dot}>.</span>Zimms
-            </h1>
+          <Link to="/">
+            <Logo className="logo" />
           </Link>
         </div>
-        <ul className={headerStyles.navList}>
+        <ul className="nav-list">
           <li>
             <Link
               to="/"
-              className={headerStyles.navList_item}
-              activeClassName={headerStyles.navList_itemActive}
+              className="nav-list__item"
+              activeClassName="nav-list__item-active"
               style={{ textDecoration: "none" }}
             >
               Home
@@ -41,8 +35,8 @@ const Header = () => {
           <li>
             <Link
               to="/about"
-              className={headerStyles.navList_item}
-              activeClassName={headerStyles.navList_itemActive}
+              className="nav-list__item"
+              activeClassName="nav-list__item-active"
               style={{ textDecoration: "none" }}
             >
               About
@@ -51,8 +45,8 @@ const Header = () => {
           <li>
             <Link
               to="/blog"
-              className={headerStyles.navList_item}
-              activeClassName={headerStyles.navList_itemActive}
+              className="nav-list__item"
+              activeClassName="nav-list__item-active"
               style={{ textDecoration: "none" }}
             >
               Blog
@@ -61,8 +55,8 @@ const Header = () => {
           <li>
             <Link
               to="/contact"
-              className={headerStyles.navList_item}
-              activeClassName={headerStyles.navList_itemActive}
+              className="nav-list__item"
+              activeClassName="nav-list__item-active"
               style={{ textDecoration: "none" }}
             >
               Contact

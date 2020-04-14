@@ -1,37 +1,10 @@
-@import "variables";
-@import "typography";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-}
+@import "components/blog-meta";
 
-body {
-  /*font-family: $font-primary;*/
-  background-color: $gray-dark;
-  color: #fff;
-  font-weight: 300;
-  line-height: 1.6;
-  font-size: 1.6rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.content {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  flex-grow: 1;
-}
+@import "layout/header";

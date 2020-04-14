@@ -5,7 +5,7 @@ module.exports = {
     description: `A man with the name of Kyle Zimmer had a dream to create a creative online space where he can share things with the world, this is that.`,
     siteUrl: `https://kzimms.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `kdotzimms`,
     },
   },
   plugins: [
@@ -67,14 +67,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

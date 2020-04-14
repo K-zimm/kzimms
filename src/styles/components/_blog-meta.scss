@@ -1,0 +1,14 @@
+.blogMeta {
+  display: flex;
+  align-items: center;
+  img {
+    background-color: $mainColor-light;
+    margin-right: 15px;
+  }
+  .author {
+    margin-left: 20px;
+    &__name {
+      @include typo-subtitle1;
+    }
+  }
+}
