@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Kzimms Digital Dump`,
+    title: `K.Zimms`,
     author: `Kyle Zimmer`,
-    description: `A man with the name of Kyle Zimmer had a dream to create a creative online space where he can share things with the world, this is that.`,
+    description: `A man by the name of Kyle Zimmer had a dream to create a creative online space where he can share things with the world, this is that.`,
     siteUrl: `https://kzimms.com`,
     social: {
       twitter: `kdotzimms`,

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Assistant|Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
 @font-face {
   font-family: "SpaceRanger";
@@ -18,61 +18,61 @@
 
 body {
   color: #fff;
-  font-family: unquote("Assistant");
+  font-family: unquote("Open Sans");
   font-weight: 300;
   line-height: 1.6;
   font-size: 1.6rem;
 }
 
 @mixin typo-headline1 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("SpaceRanger");
   font-size: 10rem;
 }
 @mixin typo-headline2 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("SpaceRanger");
   font-size: 6.3rem;
 }
 @mixin typo-headline3 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("SpaceRanger");
   font-size: 5rem;
 }
 @mixin typo-headline4 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("SpaceRanger");
   font-size: 3.6rem;
 }
 @mixin typo-headline5 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("SpaceRanger");
   font-size: 2.5rem;
 }
 @mixin typo-headline6 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("SpaceRanger");
   font-size: 2.1rem;
 }
 @mixin typo-body1 {
-  font-family: unquote("Assistant");
+  font-family: unquote("Open Sans");
   font-size: 1.7rem;
 }
 @mixin typo-body2 {
-  font-family: unquote("Assistant");
+  font-family: unquote("Open Sans");
   font-size: 1.5rem;
 }
 @mixin typo-subtitle1 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("Open Sans");
   font-size: 1.7rem;
 }
 @mixin typo-subtitle2 {
-  font-family: unquote("Bree Serif");
+  font-family: unquote("Open Sans");
   font-size: 1.5rem;
 }
 @mixin typo-button {
-  font-family: unquote("Assistant");
+  font-family: unquote("Open Sans");
   font-size: 1.5rem;
 }
 @mixin typo-overline {
-  font-family: unquote("Assistant");
+  font-family: unquote("Open Sans");
   font-size: 1.1rem;
 }
 @mixin typo-caption {
-  font-family: unquote("Assistant");
+  font-family: unquote("Open Sans");
   font-size: 1.3rem;
 }
