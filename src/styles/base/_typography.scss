@@ -24,6 +24,11 @@ body {
   font-size: 1.6rem;
 }
 
+input,
+button {
+  font-family: unquote("Open Sans");
+}
+
 @mixin typo-headline1 {
   font-family: unquote("SpaceRanger");
   font-size: 10rem;

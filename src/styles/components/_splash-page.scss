@@ -1,10 +1,97 @@
 .splash-page {
-  display: flex;
-  height: 100vh;
-  align-items: flex-end;
-  justify-content: center;
-  img {
-    width: 30%;
-    height: auto;
+  width: 90%;
+  margin: 0 auto;
+  .welcome-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+    &__message {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: -3rem;
+    }
+    &__logo {
+      max-width: 500px;
+    }
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 0 auto;
+    &__portrait {
+      width: 50%;
+    }
+    &__text {
+      width: 50%;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:before {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: #fff;
+        transform: translate(-120px, 25px);
+      }
+      &--subTitle {
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1;
+      }
+      &--title {
+        font-family: "SpaceRanger";
+        font-size: 6.2rem;
+        color: $mainColor-light;
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+      &--anouncement {
+        padding-left: 2.5rem;
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      &--cta {
+        padding-left: 2.5rem;
+        input {
+          padding: 0.5rem;
+          background-color: transparent;
+          border: none;
+          border-bottom: 3px solid $secondaryColor;
+          width: 80%;
+          margin-bottom: 1rem;
+          color: #fff;
+          font-size: 1.8rem;
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 8px 0 #5cdb9534;
+          }
+        }
+        button {
+          font-size: 1.8rem;
+          font-weight: 700;
+          padding: 0.5rem 1.2rem;
+          background-image: linear-gradient(
+            131deg,
+            $secondaryColor,
+            $tertiaryColor
+          );
+          border: none;
+          color: $gray-dark;
+          cursor: pointer;
+          box-shadow: 0 0 25px 0 #5cdb9546;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+          margin-top: 1rem;
+        }
+      }
+    }
   }
 }
