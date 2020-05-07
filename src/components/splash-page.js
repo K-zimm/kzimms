@@ -61,10 +61,14 @@ const SplashPage = () => {
           <div className="hero__text--cta">
             <form
               name="splash-newsletter"
-              method="POST"
-              data-netlify="true"
+              method="post"
+              netlify
+              netlify-honeypot="bot-field"
               action="/thank-you/launch"
             >
+              <p>
+                <input type="hidden" name="bot-field" />
+              </p>
               <p>
                 <input type="text" name="name" placeholder="NAME" />
               </p>
