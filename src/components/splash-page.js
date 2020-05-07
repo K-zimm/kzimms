@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import SEO from "../components/seo"
 
 import ProfilePic from "../images/Profile-pic-outerglow.png"
 import Logo from "../../content/assets/logo-underline-white.svg"
@@ -22,6 +23,7 @@ const SplashPage = () => {
 
   return (
     <div className="splash-page">
+      <SEO title="Welcome" />
       <div className="welcome-banner">
         <div className="welcome-banner__message"> Welcome To</div>
         <Logo className="welcome-banner__logo" />
@@ -57,7 +59,12 @@ const SplashPage = () => {
             </p>
           </div>
           <div className="hero__text--cta">
-            <form name="splash-newsletter" method="POST" data-netlify="true">
+            <form
+              name="splash-newsletter"
+              method="POST"
+              data-netlify="true"
+              action="/thank-you/launch"
+            >
               <p>
                 <input type="text" name="name" placeholder="NAME" />
               </p>
