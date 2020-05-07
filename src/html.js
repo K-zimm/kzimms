@@ -28,6 +28,27 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+        <form
+          name="splash-newsletter"
+          method="post"
+          netlify
+          netlify-honeypot="bot-field"
+          action="/thank-you/launch"
+          style={{ display: "none" }}
+        >
+          <p>
+            <input type="hidden" name="bot-field" />
+          </p>
+          <p>
+            <input type="text" name="name" placeholder="NAME" />
+          </p>
+          <p>
+            <input type="email" name="email" placeholder="EMAIL" />
+          </p>
+          <p>
+            <button type="submit">Subscribe</button>
+          </p>
+        </form>
       </body>
     </html>
   )
