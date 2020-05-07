@@ -97,13 +97,23 @@ const SplashPage = () => {
             >
               <input type="hidden" name="form-name" value="splash-newsletter" />
               <p>
-                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" onChange={handleChange} />
               </p>
               <p>
-                <input type="text" name="name" placeholder="NAME" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="NAME"
+                  onChange={handleChange}
+                />
               </p>
               <p>
-                <input type="email" name="email" placeholder="EMAIL" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="EMAIL"
+                  onChange={handleChange}
+                />
               </p>
               <p>
                 <button type="submit">Subscribe</button>
