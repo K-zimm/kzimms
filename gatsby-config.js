@@ -86,13 +86,6 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    {
-      // Note: this plugin is coded to only work on production
-      resolve: `gatsby-plugin-subscribers`,
-      options: {
-        id: 'e80f85ba-63b1-4683-9907-4ec310fb331a',
-      }
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
