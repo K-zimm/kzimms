@@ -94,6 +94,8 @@
       }
       &--anouncement {
         padding-left: 2.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.9rem;
         @include respond(phone) {
           z-index: 11;
           background-image: linear-gradient(180deg, transparent, $gray-dark 8%);

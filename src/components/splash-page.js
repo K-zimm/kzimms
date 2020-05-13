@@ -2,7 +2,9 @@ import React from "react"
 import { navigate } from "gatsby-link"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+
 import SEO from "../components/seo"
+import SocialLinks from "../components/social-links"
 
 import ProfilePic from "../images/Profile-pic-outerglow.png"
 import Logo from "../../content/assets/logo-underline-white.svg"
@@ -57,6 +59,8 @@ const SplashPage = () => {
         <Logo className="welcome-banner__logo" />
       </div>
 
+      <SocialLinks />
+
       <div className="hero">
         <Image
           fluid={data.portrait.childImageSharp.fluid}
@@ -65,26 +69,14 @@ const SplashPage = () => {
         />
         <div className="hero__text">
           <div className="hero__text--subTitle">Hello, I'm</div>
-          <div className="hero__text--title">Kyle Zimmer</div>
+          <h1 className="hero__text--title">Kyle Zimmer</h1>
           <div className="hero__text--anouncement">
             <p>
-              Thank you very much for checking out this website. As you can
-              tell, there isn't much to it YET.
+              I am in the process of building out a pretty cool website. This will be my hub to share information with others. I will be posting content with a variety of topics including my journey as a web developer, technology such as cryptocurrency and software, start ups and small business, and other comments on the world as it be.
             </p>
-            <p>
-              I am hard at work developing the rest of the site. I look forward
-              to sharing some insightful information with you via blog posts
-              very soon!
-            </p>
-            <p>
-              If you are interested in what is to come, please subscribe to my
-              newsletter by filling out the form below. You will be notified by
-              email when the site finished. You will also recieve my weekly
-              newsletter in the future which will contain a summary of posts
-              that have been added to the site and links to them, general
-              insights I had throughout the week, helpful resources I stumble
-              upon, and any other pieces of value I feel are worthy of sharing!
-            </p>
+            <h2>
+              Subscribe to my email newletter to get notified when my first blog post drops
+            </h2>
           </div>
           <div className="hero__text--cta">
             <form
