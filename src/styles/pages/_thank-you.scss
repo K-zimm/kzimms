@@ -1,26 +1,47 @@
 .thankyou-page {
-    min-height: 100vh;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .thankyou-graphic {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        .launch-svg {
-            width: 192rem;
-            height: auto;
-        }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+  padding-top: 2rem;
+  .thankyou-graphic svg {
+    height: 50vh !important;
+    width: auto !important;
+    #spaceshuttle {
+        animation: wobble 3s ease-in-out infinite;
+        transform-origin: center;
+        transform-box: fill-box;
     }
-    .thankyou-message {
-        max-width: 900px;
-        margin-bottom: 3rem;
-        em {
-            font-size: 1.3rem;
-        }
+  }
+  .thankyou-message {
+    max-width: 900px;
+    margin-bottom: 2rem;
+    h1 {
+        color: $secondaryColor;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    em {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotateZ(0deg) scaleX(0.99) scaleY(1.01);
+    } 
+    25% {
+        transform: rotateZ(.5deg) scaleX(1.01) scaleY(0.99);
+    }
+    50% {
+        transform: rotateZ(0deg) scaleX(0.99) scaleY(1.01);
+    }
+    75% {
+        transform: rotateZ(.5deg) scaleX(1.01) scaleY(0.99);
+    }
+    100% {
+        transform: rotateZ(0deg) scaleX(0.99) scaleY(1.01);
     }
 }
