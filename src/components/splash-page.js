@@ -2,7 +2,9 @@ import React from "react"
 import { navigate } from "gatsby-link"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+
 import SEO from "../components/seo"
+import SocialLinks from "../components/social-links"
 
 import ProfilePic from "../images/Profile-pic-outerglow.png"
 import Logo_avatar from "../../content/assets/logo_avatar-w-text.svg"
@@ -54,10 +56,14 @@ const SplashPage = () => {
       <SEO title="Welcome" />
 
       <div className="hero">
-        <Logo_avatar className="hero__portrait" />
+        <div className="hero__image">
+          <Logo_avatar className="hero__portrait" />
+          <SocialLinks />
+        </div>
+
         <div className="hero__text">
           <div className="hero__text--subTitle">Hello, I'm</div>
-          <div className="hero__text--title">Kyle Zimmer</div>
+          <h1 className="hero__text--title">Kyle Zimmer</h1>
           <div className="hero__text--anouncement">
             <p>Launch in progress...</p>
             <p>
