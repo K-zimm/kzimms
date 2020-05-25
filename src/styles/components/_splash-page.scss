@@ -1,43 +1,29 @@
 .splash-page {
   width: 90%;
   margin: 0 auto;
-  .welcome-banner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0 2rem 0;
-    &__message {
-      font-size: 2.4rem;
-      font-weight: 700;
-      margin-bottom: -3rem;
-    }
-    &__logo {
-      max-width: 500px;
-    }
-  }
   .hero {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     max-width: 1300px;
     margin: 0 auto;
+    padding: 30px 0;
     @include respond(phone) {
       flex-direction: column;
       position: relative;
     }
     &__portrait {
-      width: 50%;
+      width: 40%;
       @include respond(tab-port) {
         width: 30%;
       }
       @include respond(phone) {
-        width: 50%;
+        width: 40%;
         z-index: 10;
       }
     }
     &__text {
-      width: 50%;
+      width: 60%;
       align-self: center;
       display: flex;
       flex-direction: column;
@@ -47,27 +33,27 @@
       }
       @include respond(phone) {
         width: 100%;
-        margin-top: -15%;
+        margin-top: 0;
         margin-bottom: 3rem;
       }
-      &:before {
-        content: "";
-        width: 100px;
-        height: 2px;
-        background-color: #fff;
-        transform: translate(-120px, 25px);
-        @include respond(tab-port) {
-          width: 40px;
-          transform: translate(-60px, 25px);
-        }
-        @include respond(phone) {
-          width: 25px;
-          transform: translate(0px, 0px);
-          position: absolute;
-          top: 10%;
-          left: 38%;
-        }
-      }
+      // &:before {
+      //   content: "";
+      //   width: 100px;
+      //   height: 2px;
+      //   background-color: #fff;
+      //   transform: translate(-120px, 25px);
+      //   @include respond(tab-port) {
+      //     width: 40px;
+      //     transform: translate(-60px, 25px);
+      //   }
+      //   @include respond(phone) {
+      //     width: 25px;
+      //     transform: translate(0px, 0px);
+      //     position: absolute;
+      //     top: 10%;
+      //     left: 38%;
+      //   }
+      // }
       &--subTitle {
         font-size: 3.2rem;
         text-transform: uppercase;
@@ -94,6 +80,10 @@
       }
       &--anouncement {
         padding-left: 2.5rem;
+
+        .__large-text {
+          font-size: 2.2rem;
+        }
         @include respond(phone) {
           z-index: 11;
           background-image: linear-gradient(180deg, transparent, $gray-dark 8%);
@@ -101,6 +91,7 @@
         }
         p {
           margin-bottom: 1rem;
+          font-size: 1.6rem;
         }
       }
       &--cta {

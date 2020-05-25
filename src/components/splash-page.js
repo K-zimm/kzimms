@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 import SEO from "../components/seo"
 
 import ProfilePic from "../images/Profile-pic-outerglow.png"
-import Logo from "../../content/assets/logo-underline-white.svg"
+import Logo_avatar from "../../content/assets/logo_avatar-w-text.svg"
 
 import "../styles/main.scss"
 
@@ -52,38 +52,28 @@ const SplashPage = () => {
   return (
     <div className="splash-page">
       <SEO title="Welcome" />
-      <div className="welcome-banner">
-        <div className="welcome-banner__message"> Welcome To</div>
-        <Logo className="welcome-banner__logo" />
-      </div>
 
       <div className="hero">
-        <Image
-          fluid={data.portrait.childImageSharp.fluid}
-          alt="Kyle Zimmer"
-          className="hero__portrait"
-        />
+        <Logo_avatar className="hero__portrait" />
         <div className="hero__text">
           <div className="hero__text--subTitle">Hello, I'm</div>
           <div className="hero__text--title">Kyle Zimmer</div>
           <div className="hero__text--anouncement">
+            <p>Launch in progress...</p>
             <p>
-              Thank you very much for checking out this website. As you can
-              tell, there isn't much to it YET.
+              I am in the final stretch of finishing this site! I have some
+              awesome content planned, including hot tips on starting or growing
+              a small business. Over the past few years I have helped many
+              businesses grow by creating a digital storefront for them.
             </p>
             <p>
-              I am hard at work developing the rest of the site. I look forward
-              to sharing some insightful information with you via blog posts
-              very soon!
+              I hope to share some things that I have learned from my
+              experiences to help others along their journey of becoming a small
+              business owner. Subscribe to my newletter below if you are
+              interested in recieving updates when I release new content.
             </p>
-            <p>
-              If you are interested in what is to come, please subscribe to my
-              newsletter by filling out the form below. You will be notified by
-              email when the site finished. You will also recieve my weekly
-              newsletter in the future which will contain a summary of posts
-              that have been added to the site and links to them, general
-              insights I had throughout the week, helpful resources I stumble
-              upon, and any other pieces of value I feel are worthy of sharing!
+            <p className="__large-text">
+              Lets make some money doing something we enjoy!
             </p>
           </div>
           <div className="hero__text--cta">
