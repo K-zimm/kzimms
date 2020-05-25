@@ -136,6 +136,11 @@
           letter-spacing: 0.1rem;
           text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
           margin-top: 1rem;
+          transition: all 0.3s;
+          &:hover {
+            text-shadow: 0 3px 5px #5cdb9546;
+            transform: scale(1.03);
+          }
         }
       }
     }
