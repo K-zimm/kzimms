@@ -22,7 +22,9 @@
         z-index: 10;
       }
       .hero__portrait {
-        width: 40%;
+        @include respond(phone) {
+          width: 40%;
+        }
       }
     }
     &__text {
