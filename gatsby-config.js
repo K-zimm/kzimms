@@ -10,7 +10,7 @@ module.exports = {
       youtube: `UC-1zaq9jeLrZ_OHqI7EPO4Q`,
       linkedin: `kylezimmer2`,
       instagram: `k.zimms`,
-      twitch: `kzimms`
+      twitch: `kzimms`,
     },
   },
   plugins: [
@@ -56,15 +56,15 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-P9RPHSM",
-  
+
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false,
-  
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         // Defaults to null
-        defaultDataLayer: { platform: "gatsby" }
+        defaultDataLayer: { platform: "gatsby" },
       },
     },
     {
@@ -83,7 +83,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon-2.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
