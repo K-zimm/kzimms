@@ -1,8 +1,10 @@
 .splash-page {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding-top: 2rem;
   .hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     //max-width: 1300px;
@@ -94,6 +96,7 @@
         color: $secondaryColor;
         line-height: 1;
         margin-bottom: 1rem;
+        letter-spacing: 2px;
         @include respond(phone) {
           position: absolute;
           font-size: 3.2rem;
@@ -112,50 +115,51 @@
           font-size: 1.6rem;
         }
       }
-      &--cta {
-        padding-left: 2.5rem;
+    }
+    &__cta {
+      margin-top: 1rem;
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      input {
+        padding: 0.5rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid $secondaryColor;
+        width: 80%;
+        margin-bottom: 1rem;
+        color: #fff;
+        font-size: 1.8rem;
         @include respond(phone) {
-          padding-left: 0;
+          width: 100%;
         }
-        input {
-          padding: 0.5rem;
-          background-color: transparent;
-          border: none;
-          border-bottom: 3px solid $secondaryColor;
-          width: 80%;
-          margin-bottom: 1rem;
-          color: #fff;
-          font-size: 1.8rem;
-          @include respond(phone) {
-            width: 100%;
-          }
-          &:focus {
-            outline: none;
-            box-shadow: 0 0 8px 0 #5cdb9534;
-          }
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 8px 0 #5cdb9534;
         }
-        button {
-          font-size: 1.8rem;
-          font-weight: 700;
-          padding: 0.5rem 1.2rem;
-          background-image: linear-gradient(
-            131deg,
-            $secondaryColor,
-            $tertiaryColor
-          );
-          border: none;
-          color: $gray-dark;
-          cursor: pointer;
-          box-shadow: 0 0 25px 0 #5cdb9546;
-          text-transform: uppercase;
-          letter-spacing: 0.1rem;
-          text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-          margin-top: 1rem;
-          transition: all 0.3s;
-          &:hover {
-            text-shadow: 0 3px 5px #5cdb9546;
-            transform: scale(1.03);
-          }
+      }
+      button {
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 0.5rem 1.2rem;
+        background-image: linear-gradient(
+          131deg,
+          $secondaryColor,
+          $tertiaryColor
+        );
+        border: none;
+        color: $gray-dark;
+        cursor: pointer;
+        box-shadow: 0 0 25px 0 #5cdb9546;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s;
+        &:hover {
+          text-shadow: 0 3px 5px #5cdb9546;
+          transform: scale(1.03);
         }
       }
     }

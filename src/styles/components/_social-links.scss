@@ -1,4 +1,4 @@
-.social-links {
+.social-links_horizontal, .social-links_vertical {
     display: flex;
     justify-content: center;
     .social-icon {
@@ -11,4 +11,9 @@
             transform: scale(1.2);
         }
     }
+}
+
+.social-links_vertical {
+    flex-direction: column;
+    align-items: flex-start;
 }

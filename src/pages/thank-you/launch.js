@@ -1,7 +1,7 @@
 import React from "react"
 
 import SEO from "../../components/seo"
-import SocialLinks from "../../components/social-links"
+import SocialLinks from "../../components/Social-links/horizontal"
 import SpaceShuttle from "../../../content/assets/blast-off.svg"
 
 const ThankyouLaunch = ({ data }) => {

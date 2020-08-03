@@ -1,0 +1,26 @@
+.signup-button {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border: 3px solid $secondaryColor;
+  background: transparent;
+  color: $secondaryColor;
+  cursor: pointer;
+  box-shadow: 0 0 25px 0 #5cdb9546;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  &:hover {
+    text-shadow: 0 3px 5px #5cdb9546;
+    transform: scale(1.03);
+  }
+  a {
+    text-decoration: none;
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

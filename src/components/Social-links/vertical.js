@@ -1,11 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import SocialSprite from "../images/social-icon_sprite.svg"
+import SocialSprite from "../../images/social-icon_sprite.svg"
 
 const SocialLinks = () => {
   const data = useStaticQuery(graphql`
-    query SocialQuery {
+    query SocialQueryVertical {
       site {
         siteMetadata {
           social {
@@ -24,7 +24,7 @@ const SocialLinks = () => {
   const social = data.site.siteMetadata.social
 
   return (
-    <div className="social-links">
+    <div className="social-links_vertical">
       <a href={`https://facebook.com/${social.facebook}`} target="_blank" rel="noopener noreferrer">
         <svg className="social-icon">
           <use xlinkHref={`${SocialSprite}#icon-facebook`} />

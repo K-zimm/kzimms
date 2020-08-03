@@ -2,8 +2,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Meta from "../components/blog-meta"
-import Layout from "../components/layout"
+import Layout from "../components/layout-home"
 import SEO from "../components/seo"
+import SplashPage from "../components/splash-page"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -11,8 +12,8 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Welcome" />
-      <Meta />
+      <SEO title="Learn Website Technology &amp; Crypto Investing" />
+      <SplashPage />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
