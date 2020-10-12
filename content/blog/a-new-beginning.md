@@ -1,12 +1,13 @@
 ---
-title: Welcome
+title: Mission Statement
 date: 2020-05-21T04:22:12.257Z
 thumbnail: /img/small-tree.jpg
 tags:
-  - General
-  - Introduction
+  - Mission Statement
 featured: true
-description: 'My name is Kyle and welcome to K.Zimms, my place to share information.'
+description: >-
+  Mission statement of K.Zimms. My goals as a freelancer and what I hope to
+  accomplish.
 ---
 My name is Kyle and **welcome to K.Zimms**, my place to share information.
 
