@@ -25,34 +25,49 @@ const SocialLinks = () => {
 
   return (
     <div className="social-links_horizontal">
-      <a href={`https://facebook.com/${social.facebook}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://facebook.com/${social.facebook}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg className="social-icon">
           <use xlinkHref={`${SocialSprite}#icon-facebook`} />
         </svg>
       </a>
-      <a href={`https://instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://instagram.com/${social.instagram}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg className="social-icon">
           <use xlinkHref={`${SocialSprite}#icon-instagram`} />
         </svg>
       </a>
-      <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://twitter.com/${social.twitter}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg className="social-icon">
           <use xlinkHref={`${SocialSprite}#icon-twitter`} />
         </svg>
       </a>
-      <a href={`https://youtube.com/channel/${social.youtube}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://youtube.com/channel/${social.youtube}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg className="social-icon">
           <use xlinkHref={`${SocialSprite}#icon-youtube`} />
         </svg>
       </a>
-      <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://linkedin.com/in/${social.linkedin}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg className="social-icon">
           <use xlinkHref={`${SocialSprite}#icon-linkedin`} />
-        </svg>
-      </a>
-      <a href={`https://twitch.com/${social.twitch}`} target="_blank" rel="noopener noreferrer">
-        <svg className="social-icon">
-          <use xlinkHref={`${SocialSprite}#icon-twitch`} />
         </svg>
       </a>
     </div>

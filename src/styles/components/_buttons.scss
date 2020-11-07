@@ -24,3 +24,33 @@
     }
   }
 }
+
+.work-with-me_btn {
+  background-image: linear-gradient(131deg, $secondaryColor, $tertiaryColor);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgba(92, 219, 149, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 1rem;
+  a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    color: $gray-dark;
+    display: block;
+    text-align: center;
+  }
+  &:hover {
+    text-shadow: 0 0.1rem 0.3rem #5cdb9546;
+    box-shadow: 0 0 25px 0 rgba(92, 219, 149, 0.3);
+  }
+  &:active {
+    transform: translateY(0.1rem);
+    box-shadow: 0 0 20px 0 rgba(92, 219, 149, 0.2);
+  }
+}
