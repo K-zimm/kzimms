@@ -44,8 +44,8 @@ const Header = () => {
       </div>
       <div className="header__middle">
         <nav className="header__nav">
-          More Information Coming Soon!
-          {/* <ul className="nav-list">
+          More information coming soon!
+          {/*<ul className="nav-list">
             <li>
               <Link
                 to="/home"
@@ -86,13 +86,13 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-          </ul> */}
+  </ul>*/}
         </nav>
       </div>
       <div className="header__right">
         <div className="header__cta-section">
           <div className="work-with-me_btn">
-            <Link to="/membership">Get A Website</Link>
+            <Link to="#discovery-form">Get A Website</Link>
           </div>
         </div>
       </div>

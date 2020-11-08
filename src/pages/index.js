@@ -54,7 +54,7 @@ const BlogIndex = ({ data, location }) => {
               latest technology.
             </p>
             <div className="work-with-me_btn">
-              <Link to="/contact">Work with me</Link>
+              <Link to="#discovery-form">Work with me</Link>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ const BlogIndex = ({ data, location }) => {
           </div>
         </div>
       </section>
-      <section className="contact-section">
+      <section className="contact-section" id="discovery-form">
         <h2>Tell Me About Your Ideas</h2>
         <div className="subtitle">Next step: a free discovery call.</div>
         <form

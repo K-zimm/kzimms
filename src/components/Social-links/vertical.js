@@ -1,9 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import SocialSprite from "../../images/social-icon_sprite.svg"
-import FacebookIcon from "../../images/social-icons/facebook-icon.svg"
-
 const SocialLinks = () => {
   const data = useStaticQuery(graphql`
     query SocialQueryVertical {

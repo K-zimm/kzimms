@@ -3,6 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 980px) {
+    flex-wrap: wrap;
+  }
   .social-links_vertical {
     position: absolute;
     top: 1rem;
@@ -17,6 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 980px) {
+      order: 3;
+      width: 100%;
+    }
   }
   &__right {
     width: 20rem;
