@@ -6,14 +6,23 @@
   @media screen and (max-width: 980px) {
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 580px) {
+    flex-direction: column;
+  }
   .social-links_vertical {
     position: absolute;
     top: 1rem;
     left: 5%;
+    @media screen and (max-width: 980px) {
+      left: calc(5% - 20px);
+    }
   }
   &__left {
     width: 20rem;
     margin-top: 2rem;
+    @media screen and (max-width: 580px) {
+      margin-bottom: 1.5rem;
+    }
   }
   &__middle {
     flex-grow: 1;
@@ -27,6 +36,9 @@
   }
   &__right {
     width: 20rem;
+    @media screen and (max-width: 580px) {
+      margin-bottom: 1.5rem;
+    }
   }
   &__cta-section {
   }
