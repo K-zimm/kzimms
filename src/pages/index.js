@@ -46,12 +46,15 @@ const BlogIndex = ({ data, location }) => {
         <div className="column vertical-center">
           <div className="hero__content">
             <div className="subtitle">Hello, I'm Kyle Zimmer</div>
-            <h1>I make fast, secure, and easy to manage websites.</h1>
+            <h1 className="hero__content--slide-title">
+              <span>Web Developer</span> <span>Crypto Enthusiast</span>{" "}
+              <span>Creator</span>
+            </h1>
           </div>
           <div className="hero__cta">
             <p>
-              Let's work together and increase your business potential using the
-              latest technology.
+              Get your digital personality on point. I build fast, modern, and
+              brand aware websites with you as a content manager in mind.
             </p>
             <div className="work-with-me_btn">
               <Link to="#discovery-form">Work with me</Link>
@@ -74,44 +77,39 @@ const BlogIndex = ({ data, location }) => {
           <div className="column">
             <div className="about-section__content">
               <div className="about-section__content--column">
-                <h3>I Have...</h3>
+                <h3>Web Development</h3>
                 <ul>
-                  <li>- Completed a 2 year degree in software development.</li>
+                  <li>Wicked fast sites using cutting edge tech.</li>
                   <li>
-                    - Spent hundreds of hours on researching, learning, and
-                    implementing the best new technologies in web development.
+                    Modern, user friendly content management system built to fit
+                    your needs,
                   </li>
+                  <li>Designed to elevate your brand and engage visitors.</li>
                   <li>
-                    - Designed and devleoped websites from start to finish for
-                    over 30 businesses.
-                  </li>
-                  <li>
-                    - Worked with clients to integrate marketing tools with
-                    thier website increasing efficiency.
+                    Custom web application development available for those that
+                    have big ideas.
                   </li>
                 </ul>
               </div>
               <div className="about-section__content--column">
-                <h3>I Will...</h3>
+                <h3>Cryptocurrency</h3>
                 <ul>
                   <li>
-                    Design and develop a website and content management system
-                    that will maximize speed, SEO, security, and usability by:
+                    I have been researching and actively investing in the space
+                    for four years.
                   </li>
-                  <ul>
-                    <li>
-                      - Consulting with you about your overall online strategy
-                      and content management plan.
-                    </li>
-                    <li>
-                      - Identifying content structures and management plans that
-                      will best fit your business needs.
-                    </li>
-                    <li>
-                      - Providing unparalleled support and training on how to
-                      effectively use your website.
-                    </li>
-                  </ul>
+                  <li>
+                    Enjoy exploring new decentralized applications (Dapps) on
+                    the Etherum blockchain.
+                  </li>
+                  <li>
+                    Watching Ethereum blockchain alternatives like Cardano and
+                    Polkadot closely.
+                  </li>
+                  <li>
+                    Believe DeFi (Decentralized Finance) and web3 are the
+                    inovations of this decade.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -119,8 +117,8 @@ const BlogIndex = ({ data, location }) => {
         </div>
       </section>
       <section className="contact-section" id="discovery-form">
-        <h2>Tell Me About Your Ideas</h2>
-        <div className="subtitle">Next step: a free discovery call.</div>
+        <h2>Need a website? Lets get to work!</h2>
+        <div className="subtitle">Next step: discovery call.</div>
         <form
           name="discovery-request"
           method="post"

@@ -1,0 +1,14 @@
+@keyframes slide-left {
+  0%, 20%, 100% {
+    margin-left: 0;
+  }  
+  33%, 53% {
+    margin-left: -100%;
+  }
+  66%, 87% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

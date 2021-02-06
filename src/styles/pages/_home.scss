@@ -8,6 +8,17 @@
       @media screen and (max-width: 580px) {
         text-align: center;
       }
+      &--slide-title {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        span {
+          min-width: 100%;
+          &:first-child {
+            animation: slide-left 6s ease-out infinite;
+          }
+        }
+      }
     }
     &__cta {
       width: 80%;
