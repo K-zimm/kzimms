@@ -11,7 +11,6 @@ const ThankyouLaunch = ({ data }) => {
     <Layout className="container thank-you">
       <div className="thankyou-page">
         <SEO title="Thank You!" />
-
         <div className="thankyou-graphic">
           <SpaceShuttle />
         </div>
